@@ -39,6 +39,23 @@ print("\n")
 # Question 3 ========================================================================================
 print("Question 3:")
 
+TP = confusion_matrix['Green'].iloc[0]
+TN = confusion_matrix['Red'].iloc[1]
+FP = confusion_matrix['Green'].iloc[1]
+FN = confusion_matrix['Red'].iloc[0]
+
+TPR = round((TP / (TP + FN) * 100), 2)
+TNR = round((TN / (TN + FP) * 100), 2)
+print("True positive rate: " + str(TPR) + "%")
+print("True negative rate: " + str(TNR) + "%")
+
+
+
+print("\n")
+# Question 4 ========================================================================================
+print("Question 4:")
+
+
 
 
 
