@@ -57,6 +57,47 @@ print("    d) BMI and pregnancies have the lowest correlation for unhealthy pati
 print("    e) No, the correlated features are entirely different for each case.")
 
 
+print("\n")
+# Question 1.4 ========================================================================================
+print("Question 1.4:")
+print("Feature table:")
+print("{:<8} {:<8} {:<8} {:<8} {:<8} {:<8} {:<8} {:<8} {:<8}".format('Class', 'μ(F1)', 'σ(F1)', 
+	'μ(F2)', 'σ(F2)', 'μ(F3)', 'σ(F3)', 'μ(F4)', 'σ(F4)'))
+print("{:<8} {:<8} {:<8} {:<8} {:<8} {:<8} {:<8} {:<8} {:<8}".format('0', 
+	round(df_0['Glucose'].mean(), 2), round(df_0['Glucose'].std(), 2), 
+	round(df_0['BloodPressure'].mean(), 2), round(df_0['BloodPressure'].std(), 2), 
+	round(df_0['SkinThickness'].mean(), 2), round(df_0['SkinThickness'].std(), 2), 
+	round(df_0['Insulin'].mean(), 2), round(df_0['Insulin'].std(), 2), ))
+print("{:<8} {:<8} {:<8} {:<8} {:<8} {:<8} {:<8} {:<8} {:<8}".format('1', 
+	round(df_1['Glucose'].mean(), 2), round(df_1['Glucose'].std(), 2), 
+	round(df_1['BloodPressure'].mean(), 2), round(df_1['BloodPressure'].std(), 2), 
+	round(df_1['SkinThickness'].mean(), 2), round(df_1['SkinThickness'].std(), 2), 
+	round(df_1['Insulin'].mean(), 2), round(df_1['Insulin'].std(), 2), ))
+print("{:<8} {:<8} {:<8} {:<8} {:<8} {:<8} {:<8} {:<8} {:<8}".format('All', 
+	round(df['Glucose'].mean(), 2), round(df['Glucose'].std(), 2), 
+	round(df['BloodPressure'].mean(), 2), round(df['BloodPressure'].std(), 2), 
+	round(df['SkinThickness'].mean(), 2), round(df['SkinThickness'].std(), 2), 
+	round(df['Insulin'].mean(), 2), round(df['Insulin'].std(), 2), ))
+
+# F1 = Glucose
+# F2 = BloodPressure
+# F3 = SkinThickness
+# F4 = Insulin
+
+print("\n")
+# Question 1.5 ========================================================================================
+print("Question 1.5:")
+print("The mean of each of the features show a clear pattern with the mean of the all class"
+	" acting as a simple classifier for each feature. The deviations don't show as much of a pattern")
+
+print("\n")
+# Question 2 ========================================================================================
+print("Question 2: Does not appear to be in this assignment")
+
+
+print("\n")
+# Question 3.1 ========================================================================================
+print("Question 3.1:")
 
 
 
